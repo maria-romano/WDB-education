@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/106/original/TopLogo-modified.png?1642477999"
+    />
+    <style>
+      .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .nav-button {
+        /* background-color: lightpink; */
+        font-size: 37px;
+        font-family: sans-serif;
+        border-color: plum;
+        border-style: dashed;
+        border-width: 5px;
+        text-decoration: none;
+        color: white;
+        text-shadow: -1px 1px 0 rgb(139, 138, 138), 1px 1px 0 rgb(139, 138, 138),
+          1px -1px 0 rgb(139, 138, 138), -1px -1px 0 rgb(139, 138, 138);
+        padding: 30px 90px 30px 90px;
+        /* background-color: plum;
+padding: 20px 30px 20px 30px 0.5; */
+      }
+      body {
+        background-color: #fdc7e2;
+      }
+      h1 {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/105/original/WebsiteBack.png?1642477721");
+
+        height: 350px;
+        width: 100%;
+        margin: 10px 0px;
+      }
+      img {
+        width: 180px;
+        border-radius: 50%;
+      }
+      .name {
+        font-size: 200px;
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+
+        padding-top: 150px;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+          -1px -1px 0 #000;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        text-shadow: -1px 1px 0 rgb(139, 138, 138), 1px 1px 0 rgb(139, 138, 138),
+          1px -1px 0 rgb(139, 138, 138), -1px -1px 0 rgb(139, 138, 138);
+        font-family: sans-serif;
+        border-color:white;
+        border-width: 5px;
+        border-radius: 10px;
+        padding: 50px;
+      }
+
+      a:hover {
+        color: pink;
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .logo:hover {
+        animation: spin 2s infinite;
+      }
+
+      .contactContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        
+        align-content: space-around;
+      }
+
+      .indvItem{
+        padding: 30px 300px 30px;
+        align-content: space-around;
+        font-size: 30px;
+        border-color: white;
+        border-width: 5px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255, 0.4);
+      
+      }
+    </style>
+  </head>
+  <body>
+   
+    <div class="splash-page">
+      <div class="navbar">
+        <!-- <div class="logo"></div> -->
+        <div class="nav">
+          <img
+            class="logo"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/106/original/TopLogo-modified.png?1642477999"
+            alt="My Logo"
+          />
+          <div class="nav-button">
+            <a href="WDBProject1.html">Home</a>
+          </div>
+          <div class="nav-button">
+            <a href="Project1Portfolio.html">Portfolio</a>
+          </div>
+          <div class="nav-button">
+            <a href="Project1Contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="headline"></div>
+    </div>
+    <div class="portfolio">
+      <div class="proj-col">
+        <div class="proj-name"></div>
+      </div>
+      <div class="proj-col">
+        <div class="proj-name"></div>
+      </div>
+    </div>
+
+    <br />
+    <h1 class="name">Contacts</h1>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br />
+    <div class="contactContainer">
+      <div class="indvItem">
+        <a href="mailto:maria.romano@berkeley.edu" > Email </a>
+      </div>
+<br>
+      <div class="indvItem">
+        <a href="https://www.linkedin.com/in/maria-romano-480a49223/"
+          target="_blank" >Linkedin</a>
+      </div>
+  <br>
+      <div class="indvItem">
+        <a href="https://www.instagram.com/maria_romano0/" target="_blank"> Instagram </a>
+      </div>
+      <br>
+      <div class="indvItem">
+        <a href="Maria Romano Resume (2) copy.pdf" target="_blank"> Resume </a>
+      </div>
+    </div>
+        
+      
+        
+      </li>
+    </ul>
+    <script>
+      let h1 = document.querySelector("h1");
+      window.addEventListener("scroll", function () {
+        let value = 1 + window.scrollY / -600;
+        h1.style.opacity = value;
+      });
+    </script>
+  </body>
+</html>
